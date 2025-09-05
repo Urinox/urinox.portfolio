@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Graphic Designer",
   description: "Personal Portfolio",
   accentColor: "#1d4ed8",
-  image: "/dimailig.png", // 👈 Added photo beside your name
+  image: "/dimailig.png",
   social: {
     email: "francisdimailig98@gmail.com",
     twitter: "https://x.com/francisdimailig",
