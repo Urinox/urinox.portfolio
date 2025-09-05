@@ -26,22 +26,7 @@ import "../styles/global.css";
     <title>{siteConfig.name} - {siteConfig.title}</title>
   </head>
   <body>
-    <!-- Custom Header with Image + Name + Title -->
-    <header style="display: flex; align-items: center; gap: 1rem; padding: 1rem; border-bottom: 1px solid #e5e7eb;">
-      <img 
-        src={siteConfig.image} 
-        alt={siteConfig.name} 
-        width="80" 
-        height="80" 
-        style="border-radius: 50%; object-fit: cover;" 
-      />
-      <div>
-        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 600;">{siteConfig.name}</h1>
-        <p style="margin: 0; font-size: 1.1rem; color: #555;">{siteConfig.title}</p>
-      </div>
-    </header>
-
-    <!-- Keep your existing sections -->
+    <Header />
     <section>
       <Hero />
       <About />
