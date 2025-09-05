@@ -79,4 +79,10 @@ export const siteConfig = {
       ],
     },
   ],
+
+  // ✅ New CV section
+  cv: {
+    file: "/Francis_Dimailig_CV.png", // put your uploaded CV in the public folder of your project
+    buttonText: "Download CV",
+  },
 };
