@@ -9,8 +9,8 @@ export const siteConfig = {
     github: "https://github.com/Urinox",
   },
   aboutMe:
-    "",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "An determined, creative and innovative graphics designer who have an experience for editing for about 4 years. Using any editing tools or software that have a proficient and  widespread usage for more accurate and high quality editing. Making some shirts designs and proposing a logo for the client for them to have a review and revisions.. ",
+  skills: ["Javascript", "React", "Node.js", "Python"],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",
