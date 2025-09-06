@@ -39,44 +39,43 @@ export const siteConfig = {
     {
       company: "Freelance Graphic Design",
       title: "Graphic Designer",
-      dateRange: "2019 - Present",
+      dateRange: "2023 - 2025",
       bullets: [
-        "Designed logos, shirts, and digital graphics for individual clients and small businesses",
-        "Delivered over 50 successful client projects with positive feedback and repeat collaborations",
-        "Adapted designs to meet client branding and marketing requirements",
+        "Designed logos, shirts, and digital graphics for individual clients and small businesses.",
+        "Developed a Sangguniang Kabataan Logo for Barangay Tabi, Boac, in reponse to the clients request.",
+        "Designed and Proposed a T-shirt design for intramural sport event in our school which was approved and used.",
       ],
     },
     {
-      company: "Local Print Shop",
-      title: "Graphic Artist",
-      dateRange: "2017 - 2019",
+      company: "Online Design Contests",
+      title: "Graphic Designer Beginner",
+      dateRange: "2020 - 2022",
       bullets: [
-        "Created T-shirt graphics, posters, and marketing materials for local businesses",
-        "Collaborated with clients to refine concepts and ensure satisfaction",
-        "Enhanced workflow efficiency by standardizing design templates",
+        "Created more than ten fresh designs for the contest of Seasonal Editing for the youtuber",
+        "Collaborated with other Instagram Editors for the Photoshop Editing Competition that occurs yearly",
       ],
     },
   ],
   education: [
     {
-      school: "Self-Learning & Online Courses",
-      degree: "Graphic Design & Digital Art",
-      dateRange: "2016 - Present",
-      achievements: [
+      school: "Mardinduque State University",
+      degree: "Bachelor of Science in Computer Engineering",
+      dateRange: "2022 - 2026 (Expected)",
+      /*achievements: [
         "Gained expertise in Adobe Photoshop, Illustrator, and other editing tools",
         "Completed multiple online certifications in design and digital illustration",
         "Developed strong portfolio showcasing T-shirt, logo, and digital artwork",
-      ],
+      ],*/
     },
     {
-      school: "Workshops & Seminars",
-      degree: "Creative Design Training",
-      dateRange: "2018 - 2020",
-      achievements: [
+      school: "Marinduque Academy Inc.",
+      degree: "High School",
+      dateRange: "2016 - 2022",
+      /*achievements: [
         "Attended workshops on branding and design principles",
         "Learned advanced techniques in photo manipulation and digital art",
         "Applied workshop insights to real-world client projects",
-      ],
+      ],*/
     },
   ],
 
