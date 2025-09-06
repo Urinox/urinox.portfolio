@@ -58,8 +58,8 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "Mardinduque State University",
       degree: "Bachelor of Science in Computer Engineering",
+      school: "Mardinduque State University",
       dateRange: "2022 - 2026 (Expected)",
       /*achievements: [
         "Gained expertise in Adobe Photoshop, Illustrator, and other editing tools",
@@ -68,8 +68,8 @@ export const siteConfig = {
       ],*/
     },
     {
-      school: "Marinduque Academy Inc.",
       degree: "High School",
+      school: "Marinduque Academy Inc.",
       dateRange: "2016 - 2022",
       /*achievements: [
         "Attended workshops on branding and design principles",
