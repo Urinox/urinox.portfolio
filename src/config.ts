@@ -28,11 +28,11 @@ export const siteConfig = {
       skills: ["Logo Designing", "Branding", "Vector Art"],
     },
     {
-      name: "Pixel Art Gallery",
+      name: "Photo Manipulation Series",
       description:
-        "Creative pixel art illustrations developed for games and digital platforms, highlighting detailed craftsmanship and nostalgic aesthetics.",
+        "Photographic artworks that demonstrate advanced photo manipulation techniques, creating surreal and imaginative compositions.",
       link: "#",
-      skills: ["Pixel Art", "Digital Illustration"],
+      skills: ["Photo Manipulation", "Digital Illustration"],
     },
   ],
   experience: [
