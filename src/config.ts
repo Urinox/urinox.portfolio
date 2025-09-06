@@ -11,27 +11,27 @@ export const siteConfig = {
   },
   aboutMe:
     "A determined, creative, and innovative graphic designer with over 4 years of experience. Skilled in producing high-quality designs using industry-standard tools and software. Specialized in T-shirt design, logo creation, photo manipulation, and pixel art, with a focus on delivering visually compelling and client-centered results.",
-  skills: ["Pixel Art", "Photo Manipulation", "T-shirt Designing", "Logo Designing"],
+  skills: ["Photo Manipulation", "T-shirt Designing", "Logo Designing"],
   projects: [
     {
       name: "T-Shirt Design Collection",
       description:
         "A collection of custom T-shirt designs created for various clients, blending modern trends with unique artistic concepts to produce marketable apparel.",
-      link: "#",
+      link: "https://drive.google.com/drive/folders/1r4-E7HpNVq3aJx-ilY9tKUMEjGyPhbvF?usp=sharing",
       skills: ["T-shirt Designing", "Illustration", "Typography"],
     },
     {
       name: "Logo Design Portfolio",
       description:
         "A showcase of professional logos designed for businesses and personal brands, emphasizing strong identity, versatility, and visual impact.",
-      link: "#",
+      link: "https://drive.google.com/drive/folders/1UNjEoou2znBkkVoEXbCPUpqdSuNIWJra?usp=sharing",
       skills: ["Logo Designing", "Branding", "Vector Art"],
     },
     {
       name: "Photo Manipulation Series",
       description:
         "Photographic artworks that demonstrate advanced photo manipulation techniques, creating surreal and imaginative compositions.",
-      link: "#",
+      link: "https://drive.google.com/drive/folders/1yKY28uRPSOdo9H1NhXKAXoiu4fc3-aM5?usp=drive_link",
       skills: ["Photo Manipulation", "Digital Illustration"],
     },
   ],
@@ -51,8 +51,8 @@ export const siteConfig = {
       title: "Graphic Designer Beginner",
       dateRange: "2020 - 2022",
       bullets: [
-        "Created more than ten fresh designs for the contest of Seasonal Editing for the youtuber",
-        "Collaborated with other Instagram Editors for the Photoshop Editing Competition that occurs yearly",
+        "Created more than ten fresh designs for the contest of Seasonal Editing for the youtuber.",
+        "Collaborated with other Instagram Editors for the Photoshop Editing Competition that occurs yearly.",
       ],
     },
   ],
