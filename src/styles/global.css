@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
+
 body {
   font-family: 'IBM Plex Mono', monospace;
-  background: url('path_to_your_animated_yellow_nodes.gif') no-repeat center center fixed;
+  background-image: url('/J4o.gif');
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
 }
