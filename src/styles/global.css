@@ -4,10 +4,3 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
-section:nth-of-type(1) {
-  /* First <section> on the page, for instance */
-  background-image: url('/J4o.gif');
-  background-size: cover;
-  background-position: center;
-}
-
