@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Francis L. Dimailig",
   title: "Graphic Designer",
   description: "Personal Portfolio",
-  accentColor: "#1d4ed8",
+  accentColor: "#36d81dff",
   image: "/dimailig.png",
   social: {
     email: "francisdimailig98@gmail.com",
