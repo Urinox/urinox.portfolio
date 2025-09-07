@@ -79,6 +79,19 @@ export const siteConfig = {
     },
   ],
 
+  certificates: [
+    {
+      school: "Mardinduque State University",
+      degree: "Bachelor of Science in Computer Engineering",
+      dateRange: "2022 - 2026 (Expected)",
+      /*achievements: [
+        "Gained expertise in Adobe Photoshop, Illustrator, and other editing tools",
+        "Completed multiple online certifications in design and digital illustration",
+        "Developed strong portfolio showcasing T-shirt, logo, and digital artwork",
+      ],*/
+    },
+  ],
+
   // ✅ New CV section
   cv: {
     file: "/Francis_Dimailig_CV.png", // put your uploaded CV in the public folder of your project
