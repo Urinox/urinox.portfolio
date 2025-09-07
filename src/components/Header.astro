@@ -4,28 +4,42 @@ import { siteConfig } from "../config";
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
-const hasCertificates = siteConfig.certificates && siteConfig.certificates.length > 0; // ✅ Add this
+const hasCertificates = siteConfig.certificates && siteConfig.certificates.length > 0;
 ---
 
 <header
   id="header"
   class="fixed top-0 left-0 right-0 z-50 block transition-all duration-300"
 >
-  <nav class="max-w-9xl mx-auto px-8 py-4 flex items-center justify-between">
+  <nav class="max-w-9xl mx-auto px-8 py-4 flex items-center justify-between relative">
     <!-- Name + Photo -->
     <a href="#hero" class="flex items-center gap-3">
-  <img 
-    src={siteConfig.image} 
-    alt={siteConfig.fullname} 
-    width="50" 
-    height="50" 
-    class="rounded-full object-cover"
-  />
-  <span class="font-semibold text-lg hidden md:inline">{siteConfig.fullname}</span>
-</a>
+      <img 
+        src={siteConfig.image} 
+        alt={siteConfig.fullname} 
+        width="50" 
+        height="50" 
+        class="rounded-full object-cover drop-shadow-md"
+      />
+      <span class="font-semibold text-lg hidden md:inline">{siteConfig.fullname}</span>
+    </a>
 
-    <!-- Navigation -->
-    <ul class="flex items-center gap-6 justify-center">
+    <!-- Hamburger Menu Button (mobile only) -->
+    <button
+      class="md:hidden focus:outline-none"
+      id="menu-toggle"
+      aria-label="Toggle Menu"
+    >
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <ul
+      id="mobile-menu"
+      class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:shadow-none md:bg-transparent md:static md:flex md:items-center gap-6 justify-center z-50 px-8 py-4 md:p-0"
+    >
       <li>
         <a
           href="#about"
@@ -68,7 +82,7 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
         </li>
       )}
 
-      {hasCertificates && (  // ✅ New section
+      {hasCertificates && (
         <li>
           <a
             href="#certificates"
@@ -83,6 +97,7 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
 </header>
 
 <script>
+  // Sticky header blur effect
   window.addEventListener("scroll", () => {
     const header = document.getElementById("header");
     if (window.scrollY > 100) {
@@ -91,17 +106,25 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
       header?.classList.remove("bg-white/80", "backdrop-blur-sm");
     }
   });
+
+  // Hamburger menu toggle
+  const toggleButton = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  toggleButton?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
+  });
 </script>
 
 <style>
   html {
     scroll-behavior: smooth;
   }
+
   @media (max-width: 768px) {
     nav ul {
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      padding-top: 1rem;
+      flex-direction: column;
+      align-items: center;
     }
+  }
 </style>
