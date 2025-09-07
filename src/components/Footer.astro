@@ -7,8 +7,8 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 ---
 
 <footer class="bg-white border-t border-gray-300">
-  <div class="mx-auto max-w-6xl px-6 py-12 lg:px-8">
-    <div class="flex justify-between items-center gap-4">
+  <div class="mx-auto max-w-6xl px-6 py-4 lg:px-8">
+    <div class="flex items-center justify-between gap-4">
 
       <!-- Social Icons -->
       <div class="flex space-x-4 text-gray-600">
@@ -53,20 +53,20 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         </a>
       </div>
 
+      <!-- Copyright centered and flexible -->
+      <p class="text-xs text-gray-400 text-center flex-grow">
+        © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+      </p>
+
       <!-- CV Button -->
       <a
         href={siteConfig.cv.file}
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-block bg-blue-600 text-white text-sm font-semibold px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+        class="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
       >
         {siteConfig.cv.buttonText}
       </a>
     </div>
-
-    <!-- Bottom copyright for all screens -->
-    <p class="mt-10 text-center text-xs text-gray-400">
-      © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
-    </p>
   </div>
 </footer>
