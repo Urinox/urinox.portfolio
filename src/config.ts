@@ -59,7 +59,7 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "Mardinduque State University",
+      school: "Marinduque State University",
       degree: "Bachelor of Science in Computer Engineering",
       dateRange: "2022 - 2026 (Expected)",
       /*achievements: [
