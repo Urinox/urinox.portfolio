@@ -1,5 +1,6 @@
 export const siteConfig = {
-  name: "Francis L. Dimailig",
+  name: "Francis",
+  fullname: "Francis L. Dimailig",
   title: "Graphic Designer",
   description: "Personal Portfolio",
   accentColor: "#0d6200ff",
