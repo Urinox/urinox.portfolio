@@ -22,7 +22,7 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
             {siteConfig.certificates.map((cert) => (
               <div
                 class="bg-white rounded-lg shadow-sm border border-gray-100 p-2 hover:shadow-md transition-shadow duration-300 cursor-pointer"
-                onClick={() => openPopup(cert.filename)}
+                onClick={() => window.openPopup(cert.filename)}
               >
                 <img
                   src={cert.filename}
@@ -41,7 +41,7 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
     <div
       id="popup"
       class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden"
-      onClick={() => closePopup()}
+      onClick={() => window.closePopup()}
     >
       <img
         id="popup-img"
@@ -51,19 +51,19 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
       />
     </div>
 
-    <script type="module">
-      const popup = document.getElementById('popup');
-      const popupImg = document.getElementById('popup-img');
+    <script client:load>
+      const popup = document.getElementById("popup");
+      const popupImg = document.getElementById("popup-img");
 
-      window.openPopup = function (src) {
+      window.openPopup = (src) => {
         popupImg.src = src;
-        popup.classList.remove('hidden');
-      }
+        popup.classList.remove("hidden");
+      };
 
-      window.closePopup = function () {
-        popup.classList.add('hidden');
-        popupImg.src = '';
-      }
+      window.closePopup = () => {
+        popup.classList.add("hidden");
+        popupImg.src = "";
+      };
     </script>
   </section>
 )}
