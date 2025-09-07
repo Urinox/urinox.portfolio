@@ -1,18 +1,9 @@
----
-import { siteConfig } from "../config";
-
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
-const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
-const hasEducation = siteConfig.education && siteConfig.education.length > 0;
----
-
 <footer class="bg-white border-t border-gray-300">
   <div class="mx-auto max-w-6xl px-6 py-4 lg:px-8">
     <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
 
-      {/* Social icons and CV button side by side */}
-      <div class="flex justify-between items-center w-full lg:w-auto gap-4">
-        {/* Social Icons */}
+      {/* Social Icons */}
+      <div class="flex justify-start items-center w-full lg:w-auto gap-4">
         <div class="flex space-x-4 text-gray-600">
           {/* Email Icon */}
           <a
@@ -54,8 +45,15 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             </svg>
           </a>
         </div>
+      </div>
 
-        {/* CV Button */}
+      {/* Copyright only visible between socials and CV on desktop */}
+      <p class="text-xs text-gray-400 text-center mt-4 lg:mt-0 lg:flex-1">
+        © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+      </p>
+
+      {/* CV Button */}
+      <div class="flex justify-end items-center w-full lg:w-auto gap-4">
         <a
           href={siteConfig.cv.file}
           target="_blank"
@@ -65,11 +63,6 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           {siteConfig.cv.buttonText}
         </a>
       </div>
-
-      {/* Copyright below on mobile */}
-      <p class="text-xs text-gray-400 text-center mt-4 lg:mt-0">
-        © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
-      </p>
 
     </div>
   </div>
