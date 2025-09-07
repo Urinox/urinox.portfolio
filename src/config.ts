@@ -81,15 +81,21 @@ export const siteConfig = {
 
   certificates: [
     {
-      school: "Mardinduque State University",
-      degree: "Bachelor of Science in Computer Engineering",
-      dateRange: "2022 - 2026 (Expected)",
-      /*achievements: [
-        "Gained expertise in Adobe Photoshop, Illustrator, and other editing tools",
-        "Completed multiple online certifications in design and digital illustration",
-        "Developed strong portfolio showcasing T-shirt, logo, and digital artwork",
-      ],*/
-    },
+    filename: "/certificates/CertificateNo.1.png",
+    alt: "Hour of Code Certificate",
+  },
+  {
+    filename: "/certificates/CertificateNo.2.png",
+    alt: "Robotics Certificate",
+  },
+  {
+    filename: "/certificates/CertificateNo.3.png",
+    alt: "Machine Learning Certificate",
+  },
+  {
+    filename: "/certificates/CertificateNo.4.jpg",
+    alt: "Minecraft Modding Certificate",
+  },
   ],
 
   // ✅ New CV section
