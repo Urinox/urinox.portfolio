@@ -93,7 +93,15 @@ export const siteConfig = {
     alt: "Machine Learning Certificate",
   },
   {
-    filename: "/CertificateNo.4.jpg",
+    filename: "/CertificateNo.4.png",
+    alt: "Vibe Code Certificate",
+  },
+  {
+    filename: "/CertificateNo.5.png",
+    alt: "Next-Gen AI Certificate",
+  },
+  {
+    filename: "/CertificateNo.6.jpg",
     alt: "Minecraft Modding Certificate",
   },
   ],
