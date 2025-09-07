@@ -12,9 +12,9 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 
       {/* Social icons and CV button side by side */}
       <div class="flex justify-between items-center w-full lg:w-auto gap-4">
-        <!-- Social Icons -->
+        {/* Social Icons */}
         <div class="flex space-x-4 text-gray-600">
-          <!-- Email Icon -->
+          {/* Email Icon */}
           <a
             href={`mailto:${siteConfig.social.email}`}
             aria-label="Email"
@@ -26,7 +26,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             </svg>
           </a>
 
-          <!-- Twitter Icon -->
+          {/* Twitter Icon */}
           <a
             href={siteConfig.social.twitter}
             target="_blank"
@@ -40,7 +40,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             </svg>
           </a>
 
-          <!-- GitHub Icon -->
+          {/* GitHub Icon */}
           <a
             href={siteConfig.social.github}
             target="_blank"
@@ -55,7 +55,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           </a>
         </div>
 
-        <!-- CV Button -->
+        {/* CV Button */}
         <a
           href={siteConfig.cv.file}
           target="_blank"
@@ -66,7 +66,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         </a>
       </div>
 
-      <!-- Copyright below on mobile -->
+      {/* Copyright below on mobile */}
       <p class="text-xs text-gray-400 text-center mt-4 lg:mt-0">
         © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
       </p>
