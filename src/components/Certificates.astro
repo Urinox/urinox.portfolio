@@ -20,7 +20,10 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
         <div class="lg:col-span-8">
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {siteConfig.certificates.map((cert) => (
-              <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-2 hover:shadow-md transition-shadow duration-300">
+              <div
+                class="bg-white rounded-lg shadow-sm border border-gray-100 p-2 hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                onClick={() => openPopup(cert.filename)}
+              >
                 <img
                   src={cert.filename}
                   alt={cert.alt}
@@ -33,5 +36,34 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
         </div>
       </div>
     </div>
+
+    {/* Popup Modal */}
+    <div
+      id="popup"
+      class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden"
+      onClick={() => closePopup()}
+    >
+      <img
+        id="popup-img"
+        src=""
+        alt="Enlarged Certificate"
+        class="max-w-full max-h-[90vh] rounded-lg shadow-lg border-2 border-white"
+      />
+    </div>
+
+    <script type="module">
+      const popup = document.getElementById('popup');
+      const popupImg = document.getElementById('popup-img');
+
+      window.openPopup = function (src) {
+        popupImg.src = src;
+        popup.classList.remove('hidden');
+      }
+
+      window.closePopup = function () {
+        popup.classList.add('hidden');
+        popupImg.src = '';
+      }
+    </script>
   </section>
 )}
