@@ -13,16 +13,16 @@ const hasCertificates = siteConfig.certificates && siteConfig.certificates.lengt
 >
   <nav class="max-w-9xl mx-auto px-8 py-4 flex items-center justify-between">
     <!-- Name + Photo -->
-    <div class="flex items-center gap-3">
-      <img 
-        src={siteConfig.image} 
-        alt={siteConfig.fullname} 
-        width="50" 
-        height="50" 
-        class="rounded-full object-cover"
-      />
-      <span class="font-semibold text-lg hidden md:inline">{siteConfig.fullname}</span>
-    </div>
+    <a href="#hero" class="flex items-center gap-3">
+  <img 
+    src={siteConfig.image} 
+    alt={siteConfig.fullname} 
+    width="50" 
+    height="50" 
+    class="rounded-full object-cover"
+  />
+  <span class="font-semibold text-lg hidden md:inline">{siteConfig.fullname}</span>
+</a>
 
     <!-- Navigation -->
     <ul class="flex items-center gap-6 justify-center">
