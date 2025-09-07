@@ -81,19 +81,19 @@ export const siteConfig = {
 
   certificates: [
     {
-    filename: "/certificates/CertificateNo.1.png",
+    filename: "/CertificateNo.1.png",
     alt: "Hour of Code Certificate",
   },
   {
-    filename: "/certificates/CertificateNo.2.png",
+    filename: "/CertificateNo.2.png",
     alt: "Robotics Certificate",
   },
   {
-    filename: "/certificates/CertificateNo.3.png",
+    filename: "/CertificateNo.3.png",
     alt: "Machine Learning Certificate",
   },
   {
-    filename: "/certificates/CertificateNo.4.jpg",
+    filename: "/CertificateNo.4.jpg",
     alt: "Minecraft Modding Certificate",
   },
   ],
