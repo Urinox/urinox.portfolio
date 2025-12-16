@@ -102,6 +102,10 @@ export const siteConfig = {
     alt: "Next-Gen AI Certificate",
   },
   {
+    filename: "/CertificateNo.7.png",
+    alt: "The Human Side of AI",
+  },
+  {
     filename: "/CertificateNo.6.jpg",
     alt: "Minecraft Modding Certificate",
   },
